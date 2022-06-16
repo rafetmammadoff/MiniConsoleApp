@@ -1,0 +1,14 @@
+C:\Users\rafatam\Desktop\MiniConsoleApp\MiniConsole\MiniConsole\bin\Debug\netcoreapp3.1\MiniConsole.exe
+C:\Users\rafatam\Desktop\MiniConsoleApp\MiniConsole\MiniConsole\bin\Debug\netcoreapp3.1\MiniConsole.deps.json
+C:\Users\rafatam\Desktop\MiniConsoleApp\MiniConsole\MiniConsole\bin\Debug\netcoreapp3.1\MiniConsole.runtimeconfig.json
+C:\Users\rafatam\Desktop\MiniConsoleApp\MiniConsole\MiniConsole\bin\Debug\netcoreapp3.1\MiniConsole.runtimeconfig.dev.json
+C:\Users\rafatam\Desktop\MiniConsoleApp\MiniConsole\MiniConsole\bin\Debug\netcoreapp3.1\MiniConsole.dll
+C:\Users\rafatam\Desktop\MiniConsoleApp\MiniConsole\MiniConsole\bin\Debug\netcoreapp3.1\MiniConsole.pdb
+C:\Users\rafatam\Desktop\MiniConsoleApp\MiniConsole\MiniConsole\obj\Debug\netcoreapp3.1\MiniConsole.csproj.AssemblyReference.cache
+C:\Users\rafatam\Desktop\MiniConsoleApp\MiniConsole\MiniConsole\obj\Debug\netcoreapp3.1\MiniConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rafatam\Desktop\MiniConsoleApp\MiniConsole\MiniConsole\obj\Debug\netcoreapp3.1\MiniConsole.AssemblyInfoInputs.cache
+C:\Users\rafatam\Desktop\MiniConsoleApp\MiniConsole\MiniConsole\obj\Debug\netcoreapp3.1\MiniConsole.AssemblyInfo.cs
+C:\Users\rafatam\Desktop\MiniConsoleApp\MiniConsole\MiniConsole\obj\Debug\netcoreapp3.1\MiniConsole.csproj.CoreCompileInputs.cache
+C:\Users\rafatam\Desktop\MiniConsoleApp\MiniConsole\MiniConsole\obj\Debug\netcoreapp3.1\MiniConsole.dll
+C:\Users\rafatam\Desktop\MiniConsoleApp\MiniConsole\MiniConsole\obj\Debug\netcoreapp3.1\MiniConsole.pdb
+C:\Users\rafatam\Desktop\MiniConsoleApp\MiniConsole\MiniConsole\obj\Debug\netcoreapp3.1\MiniConsole.genruntimeconfig.cache
