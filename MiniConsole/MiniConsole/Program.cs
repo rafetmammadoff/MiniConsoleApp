@@ -19,45 +19,8 @@ namespace MiniConsole
                         baku.AddHuman(EmployeInfoFromConsole());
                         break;
                     case "2":
-                        string nameS;
-                        string surnameS;
-                        do
-                        {
-                            Console.WriteLine("Student adini daxil edin");
-                            nameS = Console.ReadLine();
-                        } while (!Human.CheckNameAndSurname(nameS));
-
-                        do
-                        {
-                            Console.WriteLine("Student soyadini daxil edin");
-                            surnameS = Console.ReadLine();
-                        } while (!Human.CheckNameAndSurname(surnameS));
-                        int ageS;
-                        string agesStr;
-                        do
-                        {
-                            Console.WriteLine("Isci yasini daxil edin");
-                            agesStr = Console.ReadLine();
-                        } while (!int.TryParse(agesStr, out ageS)||ageS<6 || ageS>90);
-
-                        int grade;
-                        string gradeStr;
-                        do
-                        {
-                            Console.WriteLine("Student qiymetini daxil edin");
-                            gradeStr = Console.ReadLine();
-                        } while (!int.TryParse(gradeStr, out grade)||grade<0 || grade>100);
-
-
-
-                        Student student = new Student(nameS, surnameS)
-                        {
-                            Age = ageS,
-                            Grade = grade
-                        };
-                        baku.AddHuman(student);
+                        baku.AddHuman(StudentInfoFromConsole());
                         break;
-
                     case "3":
                         Console.WriteLine($"Employelerin sayi - {baku.GetEmployees().Length}");
                         break;
@@ -65,33 +28,17 @@ namespace MiniConsole
                         Console.WriteLine($"Studentlerin sayi - {baku.GetStudents().Length}");
                         break;
                     case "5":
-                        for (int i = 0; i < baku.GetEmployees().Length; i++)
-                        {
-                            baku.GetEmployees()[i].ShowInfo();
-                        }
+                        ShowEmployee(baku);
                         break;
                     case "6":
-                        for (int i = 0; i < baku.GetStudents().Length; i++)
-                        {
-                            baku.GetStudents()[i].ShowInfo();
-                        }
+                        ShowStudent(baku);
                         break;
                     case "7":
-                        Console.WriteLine("Axtaris deyerini daxil edin");
-                        string text = Console.ReadLine();
-                        for (int i = 0; i < baku.SearchHuman(text).Length; i++)
-                        {
-                            baku.SearchHuman(text)[i].ShowInfo();
-                        }
+                        SearchHuman(baku);
                         break;
                 }
-
-
-
             } while (option != "0");
-            
         }
-
         static void Selection()
         {
             Console.WriteLine("1. Employee elave et");
@@ -137,6 +84,73 @@ namespace MiniConsole
             };
 
             return employee;
+        }
+
+        static Student StudentInfoFromConsole()
+        {
+            string nameS;
+            string surnameS;
+            do
+            {
+                Console.WriteLine("Student adini daxil edin");
+                nameS = Console.ReadLine();
+            } while (!Human.CheckNameAndSurname(nameS));
+
+            do
+            {
+                Console.WriteLine("Student soyadini daxil edin");
+                surnameS = Console.ReadLine();
+            } while (!Human.CheckNameAndSurname(surnameS));
+            int ageS;
+            string agesStr;
+            do
+            {
+                Console.WriteLine("Isci yasini daxil edin");
+                agesStr = Console.ReadLine();
+            } while (!int.TryParse(agesStr, out ageS) || ageS < 6 || ageS > 90);
+
+            int grade;
+            string gradeStr;
+            do
+            {
+                Console.WriteLine("Student qiymetini daxil edin");
+                gradeStr = Console.ReadLine();
+            } while (!int.TryParse(gradeStr, out grade) || grade < 0 || grade > 100);
+
+
+
+            Student student = new Student(nameS, surnameS)
+            {
+                Age = ageS,
+                Grade = grade
+            };
+            return student;
+        }
+
+        static void ShowEmployee(Baku baku)
+        {
+            for (int i = 0; i < baku.GetEmployees().Length; i++)
+            {
+                baku.GetEmployees()[i].ShowInfo();
+            }
+        }
+
+        static void ShowStudent(Baku baku)
+        {
+            for (int i = 0; i < baku.GetStudents().Length; i++)
+            {
+                baku.GetStudents()[i].ShowInfo();
+            }
+        }
+
+        static void SearchHuman(Baku baku)
+        {
+            Console.WriteLine("Axtaris deyerini daxil edin");
+            string text = Console.ReadLine();
+            for (int i = 0; i < baku.SearchHuman(text).Length; i++)
+            {
+                baku.SearchHuman(text)[i].ShowInfo();
+            }
         }
     }
 }

@@ -51,7 +51,7 @@ namespace MiniConsole
             Human[] students = new Human[0];
             for (int i = 0; i < _humans.Length; i++)
             {
-                if (_humans[i] is Employee)
+                if (_humans[i] is Student)
                 {
                     Array.Resize(ref students, students.Length + 1);
                     students[students.Length - 1] = _humans[i];
