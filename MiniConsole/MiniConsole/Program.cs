@@ -36,6 +36,9 @@ namespace MiniConsole
                     case "7":
                         SearchHuman(baku);
                         break;
+                    default:
+                        Console.WriteLine("Yanlis deyer daxil edilib");
+                        break;
                 }
             } while (option != "0");
         }
